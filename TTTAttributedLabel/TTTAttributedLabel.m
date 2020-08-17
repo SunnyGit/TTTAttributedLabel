@@ -239,7 +239,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 #define kCFCoreFoundationVersionNumber_iOS_7_0 847.2
 #endif
 
-+ (void)load {
++ (void)initialize {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber_iOS_7_0) {
